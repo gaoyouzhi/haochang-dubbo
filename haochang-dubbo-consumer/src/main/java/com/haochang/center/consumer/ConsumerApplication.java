@@ -1,16 +1,17 @@
-package com.haochang.dubbo.api.service.impl;
+package com.haochang.center.consumer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+
 /**
- * @description: 描述：提供者 启动类
+ * @description: 描述：消费者启动类
  * @author: youzhi.gao
- * @date: 2020-09-22 19:22
+ * @date: 2020-09-23 10:59
  */
 @SpringBootApplication
-public class ProviderApplication {
+public class ConsumerApplication {
     public static void main(String[] args) {
-        SpringApplication.run(ProviderApplication.class, args);
+        SpringApplication.run(ConsumerApplication.class, args);
     }
 }

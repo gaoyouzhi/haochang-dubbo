@@ -1,4 +1,4 @@
-package com.haochang.dubbo.api.service.impl;
+package com.haochang.center.provider.api.service;
 
 import com.alibaba.dubbo.config.annotation.Service;
 import com.haochang.dubbo.api.DemoService;
@@ -8,10 +8,10 @@ import com.haochang.dubbo.api.DemoService;
  * @author: youzhi.gao
  * @date: 2020-09-22 19:19
  */
-@Service(group = "${dubbo.application.name}", version = "${dubbo.application.version}")
+@Service(group = "${dubbo.application.group}", version = "${dubbo.application.version}")
 public class DemoServiceImpl implements DemoService {
     @Override
     public String getName(String name) {
-        return null;
+        return "hello" + name;
     }
 }
